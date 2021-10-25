@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+}
+
+body {
+    background-size: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #19345e;
+}
+
+.home {
+    background-image: url(/assets/img/bg-img.png);
+    background-size: 100%;
+}
+
+.navbar-nav {
+    font-size: 13px;
+}
+
+.nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #19345e;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #f47522;
+}
