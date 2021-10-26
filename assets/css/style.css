@@ -59,8 +59,69 @@ body {
     border-radius: 50%;
     margin-top: 30%;
     margin-left: 45%;
-    /* width: 60%;
-    height: 60%; */
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* Contact */
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.img-banner {
+    background-image: url("/assets/img/charles-rRWiVQzLm7k-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 35%;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(25, 52, 94, 0.65);
+    width: 286%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alterra {
+    display: flex;
+    margin: 25%;
+    margin-top: 40%;
+    width: 50%;
+}
+
+.forms-a {
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.form-text-a {
+    font-size: 20px;
+}
+
+.form-input-a,
+#nasionality {
+    width: 100%;
+    max-width: 450px;
+    min-width: 250px;
+    height: 28;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 767.99px) {
+    .forms-a,
+    #nasionality {
+        width: 90%;
+        height: 28;
+        padding-top: 0%;
+    }
+
+    .img-banner {
+        display: none;
+    }
 }
