@@ -21,14 +21,16 @@
         </div>
         <div class="col-md-7 forms-a">
             <h3 style="font-size: 28px;">Contact Us</h3>
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" action="review_message.html" novalidate>
                 <label for="fullname" class="form-text-a form-label">Full Name<span style="color: red">*</span></label>
                 <input type="text" class="form-input-a form-control" id="fullname" placeholder="Your Full Name Here..." required>
                 <div class="invalid-feedback">Full name cannot be empty</div>
                 <label for="email" class="form-text-a form-label">Email Address<span style="color: red">*</span></label>
                 <input type="email" class="form-input-a form-control" name="email" id="email" placeholder="example@domail.com" required>
+                <div class="invalid-feedback">Email address cannot be empty</div>
                 <label for="phone" class="form-text-a form-label">Phone Number<span style="color: red">*</span></label>
                 <input type="number" class="form-input-a form-control" id="phone" placeholder="08573890xxxxx" required>
+                <div class="invalid-feedback">Phone number cannot be empty</div>
                 <label for="nasionality" class="form-text-a form-label">Nasionality</label>
                 <select name="nasionality" id="nasionality" class="form-select" style="height: 40;">
                     <option value="" disabled selected hidden>Selected</option>
@@ -39,7 +41,6 @@
                 <label for="message" class="form-text-a form-label">Message</label>
                 <textarea name="message" class="form-input-a form-control" id="message" style="height: 112px;"
                     placeholder="Your Full Name Here..."></textarea>
-                <!-- <input type="submit" value="Submit" class="btn-orange"> -->
                 <button class="btn btn-primary btn-orange" type="submit">Submit</button>
             </form>
         </div>
