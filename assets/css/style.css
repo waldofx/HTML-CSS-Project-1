@@ -113,6 +113,46 @@ body {
     margin-bottom: 16px;
 }
 
+.messagebox {
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid grey;
+    max-width: 664px;
+    padding: 45px 49px;
+    background-color: #ffffff;
+    border: 1px solid #ccd7eb;
+    border-radius: 10px;
+}
+
+.background1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    background-color: #ffffff;
+}
+.background2 {
+    position: absolute;
+    z-index: -1;
+    top: 75%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    background-color: #edf6ff;
+}
+
+.row > hr {
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.row > div > p {
+    margin-bottom: 0;
+}
+
 @media (max-width: 767.99px) {
     .forms-a,
     #nasionality {
@@ -123,5 +163,10 @@ body {
 
     .img-banner {
         display: none;
+    }
+
+    .messagebox {
+        max-width: 500px;
+        padding: 45px 49px;
     }
 }
