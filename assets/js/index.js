@@ -21,3 +21,25 @@
         );
     });
 })();
+
+// Store
+function submitForm(event) {
+    var forms = document.getElementById("form1");
+    if (!forms.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+        forms.classList.add("was-validated");
+    } else {
+        var fullname = document.getElementById("fullname").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var nationality = document.getElementById("nationality").value;
+        var message = document.getElementById("message").value;
+        localStorage.setItem("fullnamevalue", fullname);
+        localStorage.setItem("emailvalue", email);
+        localStorage.setItem("phonevalue", phone);
+        localStorage.setItem("nationalityvalue", nationality);
+        localStorage.setItem("messagevalue", message);
+        return false;
+    }
+}
